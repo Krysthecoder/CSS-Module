@@ -4,37 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class</title>
+    <title>Document</title>
     <style>
-        .header {
-            color: aliceblue;
-            font-size: 36px;
+        /* all h2 elements */
+        h2 {
+            color: tomato;
             text-align: center;
-            background-color: black;
         }
-        .sub-header{
-            color: aliceblue;
-            font-size: 30px;
-            text-align: right;
-            background-color: black;
-        }
-        .text1 {
-            color: rgb(143, 143, 241);
-            background-color: black;
-            width: 600px;
+
+        /* all with class = "highlight" */
+        .highlith {
             font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            background-color: green;
+            opacity: .6;
+        }
+
+        /* element with id = "mainPoint" */
+        #mainPoint {
+            font-size: 24px;
+            font-weight: bold;
+            background-color: red;
+            opacity: .7;
+        }
+
+        /* all p AND h1 elements */
+        p, h1 {
+            color: blue;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1 class="header">CSS Class</h1>
+    <h1>Using simple Selectors for css (h1)</h1>
+    <h2>Subheading 1 (h2)</h2>
+    <p class="highlight">this is the first class given to a html element (using highlight)</p>
+    <h2>Subheading 2 (h2)</h2>
+    <p>A normal paragraph, with some normal tag or text</p>
+    <div>This is the main point ot the entire page since its 
+        <span id="mainPoint">id is equal to "mainPoint".</span>
     </div>
-    <section>
-        <h2 class="sub-header">What class can do for you?</h2>
-        <p class="text1">it help you to give a class to an specific html element</p>
-        <h2> withouht class</h2>
-        <p> this paragraph should have a normal css atributte.</p>
-    </section>
 </body>
 </html>
