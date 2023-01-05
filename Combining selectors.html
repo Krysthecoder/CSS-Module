@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            color: white;
+            background-color: darkblue;
+            font-size: 30px;
+            font-weight: bold;
+            opacity: 1.5;
+            text-align: center;
+        }
+        h2.sub{
+            color: aqua;
+            background-color: black;
+            font-size: 15px;
+            opacity: .5;
+            text-align: right;
+        }
+        h2.sub2{
+            color: aliceblue;
+            background-color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+        p.parrafo {
+            color: rgb(107, 107, 221);
+            background-color: black;
+            font-size: 20px;
+            opacity: .9;
+            text-align: left;
+        }
+        #important{
+            color: brown;
+            background-color: black;
+            text-align: center;
+            text-decoration-line: underline;
+            font-size: 20px;
+        }
+        /* if we delete the > arter the element (article) it will affect all p inside the elemen*/
+        article > p {
+            color: yellowgreen;
+            background-color: rgb(138, 65, 65);
+        }
+</style>
 </head>
 <body>
-    
+    <h1> Combining Selectors </h1>
+    <h2 class="sub">(sub)Subheading having a class selector</h2>
+    <h2 class="sub2">(sub2) Subheading having a <span id="important"> sub2 </span> class selector</h2>
+    <p class="parrafo">if i understand right this should work like having mutlitple paragrapgh or headers with diferent classes so i can work on specific tittles and classes.</p>
+    <article>
+        <p>this should be a child of the article father</p>        
+    </article>
+    <article>
+        <p>this should be a normal child 
+            <div>this a div<p>this is a p under a div</p></div>
+            <span>this is a span<p>now this is a p under a span</p></span>
+        </p>
+    </article>
 </body>
 </html>
